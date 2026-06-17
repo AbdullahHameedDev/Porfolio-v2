@@ -181,6 +181,10 @@ ul {
   color: var(--color-text);
 }
 
+.header__logo-dot {
+  color: var(--color-accent);
+}
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -247,6 +251,10 @@ ul {
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.03em;
+}
+
+.hero__title-accent {
+  color: var(--color-accent);
 }
 
 .hero__sub {
