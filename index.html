@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah | Porfolio</title>
+    <meta
+      name="description"
+      content="Abdullah — Frontend Developer &amp; Shopify Specialist. Selected work, about, and hire on Upwork."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="theme-color" content="#0a0a0a" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <div class="header__inner container">
+        <a class="header__logo" href="#top">abdullahdev.</a>
+
+        <nav class="header__nav" id="header-nav" aria-label="Primary">
+          <a class="header__link" href="#work">Work</a>
+          <a class="header__link" href="#about">About</a>
+          <a
+            class="header__btn"
+            href="https://www.upwork.com/freelancers/abdullahhameed"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Hire Me</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section reveal" id="home">
+        <div class="container hero__inner">
+          <p class="hero__label">Hi, I'm Abdullah</p>
+          <h1 class="hero__title">I bring your stores and websites to life</h1>
+          <p class="hero__sub">
+						Shopify & Frontend Developer building fast, responsive Shopify stores and custom websites with clean code — from design to launch.
+          </p>
+          <div class="hero__actions">
+            <a class="hero__btn hero__btn--primary" href="#work">View My Work</a>
+            <a
+              class="hero__btn hero__btn--secondary"
+              href="https://www.upwork.com/freelancers/abdullahhameed"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Hire Me</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="work section reveal" id="work">
+        <div class="container">
+          <header class="work__header">
+            <h2 class="work__title">Selected Work</h2>
+            <p class="work__sub">Projects I've built &amp; shipped.</p>
+          </header>
+
+          <div class="work__filters" role="tablist" aria-label="Filter projects">
+            <button
+              type="button"
+              class="work__filter work__filter--active"
+              role="tab"
+              aria-selected="true"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button
+              type="button"
+              class="work__filter"
+              role="tab"
+              aria-selected="false"
+              data-filter="shopify"
+            >
+              Shopify
+            </button>
+            <button
+              type="button"
+              class="work__filter"
+              role="tab"
+              aria-selected="false"
+              data-filter="wordpress"
+            >
+              WordPress
+            </button>
+          </div>
+
+          <div class="work__grid" id="work-grid">
+            <a
+              class="work__card"
+              href="https://sicksciencelabs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tags="shopify"
+            >
+              <span class="work__card-tag tag">Shopify</span>
+              <h3 class="work__card-name">Sick Science Labs</h3>
+              <p class="work__card-desc">Science-themed Shopify store.</p>
+              <span class="work__card-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="work__card"
+              href="https://nobleelkfarm.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tags="shopify"
+            >
+              <span class="work__card-tag tag">Shopify</span>
+              <h3 class="work__card-name">Noble Elk Farm</h3>
+              <p class="work__card-desc">
+                Premium elk farm products Shopify store.
+              </p>
+              <span class="work__card-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="work__card"
+              href="https://pinpinpin.it"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tags="shopify"
+            >
+              <span class="work__card-tag tag">Shopify</span>
+              <h3 class="work__card-name">PinPinPin</h3>
+              <p class="work__card-desc">
+                Fun and vibrant Shopify store for enamel pins.
+              </p>
+              <span class="work__card-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="work__card"
+              href="https://apps.shopify.com/themepack"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tags="shopify"
+            >
+              <span class="work__card-tag tag">Shopify</span>
+              <h3 class="work__card-name">Themepack</h3>
+              <p class="work__card-desc">
+                App with premium sections. Made sections from Figma design.
+              </p>
+              <span class="work__card-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="work__card"
+              href="https://www.freezbone.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tags="shopify"
+            >
+              <span class="work__card-tag tag">Shopify</span>
+              <h3 class="work__card-name">Freezbone</h3>
+              <p class="work__card-desc">
+                Website for refillable treats for dogs.
+              </p>
+              <span class="work__card-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="work__card"
+              href="https://www.nationalchildrensalliance.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tags="wordpress"
+            >
+              <span class="work__card-tag tag">WordPress · SCSS</span>
+              <h3 class="work__card-name">National Child Alliance</h3>
+              <p class="work__card-desc">Non Profit Organization</p>
+              <span class="work__card-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="work__card"
+              href="https://parentdata.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tags="wordpress"
+            >
+              <span class="work__card-tag tag">WordPress · SCSS</span>
+              <h3 class="work__card-name">ParentData</h3>
+              <p class="work__card-desc">
+                Organization that helps parents and expecting families.
+              </p>
+              <span class="work__card-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="work__card"
+              href="https://businesscamp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tags="wordpress"
+            >
+              <span class="work__card-tag tag">WordPress · SCSS</span>
+              <h3 class="work__card-name">BusinessCamp</h3>
+              <p class="work__card-desc">
+                Website that helps business owners grow through coaching.
+              </p>
+              <span class="work__card-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="work__card"
+              href="https://nuema.life"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tags="html scss js"
+            >
+              <span class="work__card-tag tag">HTML · SCSS · JS</span>
+              <h3 class="work__card-name">Nuema Life</h3>
+              <p class="work__card-desc">Clean lifestyle website.</p>
+              <span class="work__card-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="work__card"
+              href="https://uptek-offical.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-tags="html css js"
+            >
+              <span class="work__card-tag tag">HTML · CSS · JS</span>
+              <h3 class="work__card-name">Uptek</h3>
+              <p class="work__card-desc">
+                Corporate site built with HTML, CSS, and JS.
+              </p>
+              <span class="work__card-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section reveal" id="about">
+        <div class="container">
+          <header class="about__header">
+            <h2 class="about__title">About</h2>
+            <p class="about__sub">A bit about me.</p>
+          </header>
+          <p class="about__text">
+            I'm a frontend developer and Shopify specialist who turns concepts
+            into clean, production-ready code. I care deeply about craft —
+            building aesthetic software to an extremely high standard through
+            continuous practice and learning. Whether it's a custom Shopify
+            store, a WordPress theme, or a hand-coded website, I bring the same
+            attention to detail and quality to every project.
+          </p>
+          <ul class="about__skills">
+            <li class="about__skill">HTML &amp; CSS</li>
+            <li class="about__skill">JavaScript</li>
+						<li class="about__skill">TailWind CSS</li>
+            <li class="about__skill">SCSS</li>
+            <li class="about__skill">Shopify / Liquid</li>
+						<li class="about__skill">GemPages</li>
+            <li class="about__skill">Git &amp; GitHub</li>
+            <li class="about__skill">Claude</li>
+            <li class="about__skill">Cursor</li>
+            <li class="about__skill">WordPress</li>
+						<li class="about__skill">Elementor</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="ai-tools section reveal" id="ai-tools">
+        <div class="container">
+          <header class="ai-tools__header">
+            <h2 class="ai-tools__title">AI Tools</h2>
+            <p class="ai-tools__sub">Yes, I vibe code.</p>
+          </header>
+          <p class="ai-tools__intro">
+            AI is my pair programmer. I use the best tools to ship faster, write
+            cleaner code, and stay caffeinated (mostly).
+          </p>
+          <div class="ai-tools__grid">
+            <article class="ai-tools__card">
+              <h3 class="ai-tools__card-title">Claude Code</h3>
+              <p class="ai-tools__card-plan tag">Max Plan</p>
+              <p class="ai-tools__card-desc">
+                Anthropic's agentic coding tool for building, editing, and
+                shipping code directly from the terminal.
+              </p>
+            </article>
+            <article class="ai-tools__card">
+              <h3 class="ai-tools__card-title">Cursor</h3>
+              <p class="ai-tools__card-plan tag">Pro Plan</p>
+              <p class="ai-tools__card-desc">
+                AI-first code editor that helps write, edit, and understand code
+                with intelligent completions.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="connect section reveal" id="connect">
+        <div class="container connect__inner">
+          <header class="connect__header">
+            <h2 class="connect__title">Let's Connect</h2>
+            <p class="connect__sub">Ready to start a project?</p>
+          </header>
+          <p class="connect__text">
+            Send me a message right here on Upwork — I'd love to hear about your
+            project and how I can help.
+          </p>
+          <div class="connect__actions">
+            <a
+              class="connect__btn connect__btn--primary"
+              href="https://www.upwork.com/freelancers/abdullahhameed"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Book a Consultation</a
+            >
+            <a
+              class="connect__btn connect__btn--secondary"
+              href="https://www.upwork.com/freelancers/abdullahhameed"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Hire Me</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__copy">
+          <p class="footer__line">Designed &amp; coded by Abdullah</p>
+          <p class="footer__line footer__line--muted">© 2026</p>
+        </div>
+        <a
+          class="footer__github"
+          href="https://github.com/AbdullahHameedDev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub profile"
+        >
+          <svg
+            class="footer__github-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>
