@@ -1,7 +1,6 @@
 (function () {
   "use strict";
 
-  /* Project filter */
   function setupProjectFilter() {
     const filters = document.querySelectorAll(".work__filter");
     const cards = document.querySelectorAll(".work__card");
@@ -36,7 +35,6 @@
     });
   }
 
-  /* Scroll reveal */
   function setupScrollReveal() {
     const sections = document.querySelectorAll(".reveal");
     if (!sections.length) return;
@@ -54,13 +52,12 @@
           observer.unobserve(entry.target);
         });
       },
-      { root: null, threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+      { root: null, threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
     );
 
     sections.forEach((el) => observer.observe(el));
   }
 
-  /* Smooth scroll for in-page anchors */
   function setupSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", (e) => {
@@ -77,7 +74,6 @@
     });
   }
 
-  /* Hero visible immediately */
   const hero = document.querySelector(".hero.reveal");
   if (hero) hero.classList.add("is-visible");
 

@@ -1,33 +1,4 @@
-/* ==========================================================================
-   Abdullah Portfolio — BEM + CSS custom properties
-   ========================================================================== */
-
-/* :root {
-  --color-bg: #0a0a0a;
-  --color-surface: #111111;
-  --color-surface-hover: #1a1a1a;
-  --color-text: #ededec;
-  --color-muted: #8a8a8a;
-  --color-border: #222222;
-  --color-border-hover: #333333;
-  --color-accent: #c8ff00;
-  --color-accent-soft: rgba(200, 255, 0, 0.12);
-  --color-on-accent: #0a0a0a;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-heading: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-sans: var(--font-body);
-  --radius: 12px;
-  --radius-sm: 8px;
-  --container: 1100px;
-  --gutter: 24px;
-  --section-gap: 120px;
-  --header-h: 72px;
-  --ease: cubic-bezier(0.22, 1, 0.36, 1);
-} */
-
-
 :root {
-  /* Ink & Coral theme */
   --color-bg: #0a0a0a;
   --color-surface: #141414;
   --color-surface-hover: #1c1c1c;
@@ -120,7 +91,6 @@ ul {
   scroll-margin-top: var(--header-h);
 }
 
-/* Shared pill tag (project cards, plan badges, etc.) */
 .tag {
   display: inline-block;
   width: fit-content;
@@ -135,21 +105,18 @@ ul {
   border-radius: 100px;
 }
 
-/* Scroll reveal */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  transition:
+    opacity 0.7s var(--ease),
+    transform 0.7s var(--ease);
 }
 
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* ==========================================================================
-   Header
-   ========================================================================== */
 
 .header {
   position: sticky;
@@ -219,10 +186,6 @@ ul {
   opacity: 0.85;
 }
 
-/* ==========================================================================
-   Hero
-   ========================================================================== */
-
 .hero {
   min-height: 100vh;
   display: flex;
@@ -281,7 +244,10 @@ ul {
   font-size: 14px;
   font-weight: 600;
   border-radius: 100px;
-  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease,
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    background 0.2s ease,
     border-color 0.2s ease;
 }
 
@@ -306,10 +272,6 @@ ul {
   border-color: var(--color-muted);
   background: var(--color-surface);
 }
-
-/* ==========================================================================
-   Work
-   ========================================================================== */
 
 .work__header {
   margin-bottom: 40px;
@@ -350,7 +312,10 @@ ul {
   background: transparent;
   border: 1px solid var(--color-border);
   border-radius: 100px;
-  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .work__filter::after {
@@ -379,8 +344,11 @@ ul {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
-  transition: opacity 0.35s var(--ease), background 0.25s ease,
-  border-color 0.25s ease, transform 0.25s ease;
+  transition:
+    opacity 0.35s var(--ease),
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .work__card:hover {
@@ -422,17 +390,15 @@ ul {
   font-size: 21px;
   line-height: 1;
   color: var(--color-muted);
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .work__card:hover .work__card-arrow {
   color: var(--color-accent);
   transform: translate(2px, -2px);
 }
-
-/* ==========================================================================
-   About
-   ========================================================================== */
 
 .about__header {
   margin-bottom: 28px;
@@ -491,7 +457,9 @@ ul {
   color: var(--color-muted);
   border: 1px solid var(--color-border);
   border-radius: 100px;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .about__skill:hover {
@@ -521,10 +489,6 @@ ul {
   font-size: 14px;
   color: var(--color-muted);
 }
-
-/* ==========================================================================
-   AI Tools
-   ========================================================================== */
 
 .ai-tools__header {
   margin-bottom: 16px;
@@ -580,7 +544,9 @@ ul {
   background: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
-  transition: border-color 0.25s ease, transform 0.25s ease;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .ai-tools__card:hover {
@@ -605,10 +571,6 @@ ul {
   line-height: 1.6;
   color: var(--color-muted);
 }
-
-/* ==========================================================================
-   Connect
-   ========================================================================== */
 
 .connect__inner {
   max-width: 540px;
@@ -657,7 +619,10 @@ ul {
   font-size: 14px;
   font-weight: 600;
   border-radius: 100px;
-  transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease,
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease,
     background 0.2s ease;
 }
 
@@ -681,10 +646,6 @@ ul {
   border-color: var(--color-muted);
   background: var(--color-surface);
 }
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
 
 .footer {
   padding: 40px 0 48px;
@@ -724,10 +685,6 @@ ul {
   width: 20px;
   height: 20px;
 }
-
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
 
 @media (max-width: 768px) {
   .header__link {
